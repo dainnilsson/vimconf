@@ -15,3 +15,6 @@ if [ ! -h $VIMRC ] ; then
 	ln -s .vim/.vimrc $VIMRC
 	echo ".vimrc symlink created."
 fi
+
+#Create directories for swap, etc.
+mkdir -p ~/.cache/vim/{swap,backup,undo}
