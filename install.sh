@@ -3,7 +3,6 @@
 cd "$(dirname "$0")"
 
 git submodule update --init
-echo "Submodules updated."
 
 VIMRC="../.vimrc"
 
