@@ -7,6 +7,8 @@ filetype plugin indent on
 
 set nocompatible
 
+let mapleader = ","
+
 " python-mode
 " Disable python folding
 let g:pymode_folding = 0
