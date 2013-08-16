@@ -3,17 +3,6 @@
 
 " no vi-compatible
 set nocompatible
-" Setting up Vundle - the vim plugin bundler
-let iCanHazVundle=1
-let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
-if !filereadable(vundle_readme)
-    echo "Installing Vundle..."
-    echo ""
-    silent !mkdir -p ~/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
-    let iCanHazVundle=0
-endif
-
 " required for vundle
 filetype off
 
@@ -32,19 +21,6 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'klen/python-mode'
 Bundle 'tristen/vim-sparkup'
-
-" Installing plugins the first time
-if iCanHazVundle == 0
-    echo "Installing Bundles, please ignore key map error messages"
-    echo ""
-    :BundleInstall
-endif
-
-" tabs and spaces handling
-" set expandtab
-" set tabstop=4
-" set softtabstop=4
-" set shiftwidth=4
 
 syntax on
 filetype plugin indent on

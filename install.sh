@@ -17,5 +17,11 @@ fi
 #Create directories for swap, etc.
 mkdir -p ~/.cache/vim/{swap,backup,undo}
 
+#Install Vundle
+if [ ! -d "bundle/vundle" ] ; then
+	mkdir -p bundle
+	git clone https://github.com/gmarik/vundle bundle/vundle
+fi
+
 #Install/update plugins
 vim +BundleInstall!
