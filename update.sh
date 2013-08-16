@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cd "$(dirname "$0")"
-
-git submodule foreach git pull
-echo "Submodules updated."

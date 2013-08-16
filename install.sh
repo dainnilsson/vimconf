@@ -2,10 +2,9 @@
 
 cd "$(dirname "$0")"
 
-git submodule update --init
-
 VIMRC="../.vimrc"
 
+#Create symlink for .vimrc
 if [ ! -h $VIMRC ] ; then
 	if [ -f $VIMRC ] ; then
 		mv $VIMRC $VIMRC.bak

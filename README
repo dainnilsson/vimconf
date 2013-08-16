@@ -1,5 +1,3 @@
 Clone into ~/.vim
 
 Run ./install.sh for initial setup.
-
-Run ./update.sh to update plugins.
