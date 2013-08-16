@@ -16,3 +16,6 @@ fi
 
 #Create directories for swap, etc.
 mkdir -p ~/.cache/vim/{swap,backup,undo}
+
+#Install/update plugins
+vim +BundleInstall!
