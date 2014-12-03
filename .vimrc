@@ -25,9 +25,20 @@ Bundle 'tristen/vim-sparkup'
 syntax on
 filetype plugin indent on
 
-set nocompatible
+set wildmode=longest,list
+set wildmenu
 
 let mapleader = ","
+
+" Spaces, not tabs!
+set expandtab
+set shiftwidth=2 tabstop=2
+
+" associate *.template with html filetype
+au BufRead,BufNewFile *.template setfiletype html
+
+" Type specific indentation
+" autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 " python-mode
 " Disable python folding
