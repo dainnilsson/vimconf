@@ -4,6 +4,11 @@ cd "$(dirname "$0")"
 
 VIMRC="../.vimrc"
 
+#Make sure we have vim
+if [ ! -x /usr/bin/vim ] ; then
+	sudo apt-get install vim
+fi
+
 #Create symlink for .vimrc
 if [ ! -h $VIMRC ] ; then
 	if [ -f $VIMRC ] ; then

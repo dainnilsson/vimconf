@@ -16,11 +16,10 @@ Bundle 'gmarik/vundle'
 " Bundles from GitHub repos
 
 Bundle 'tpope/vim-sensible'
-Bundle 'jamessan/vim-gnupg'
 Bundle 'kien/ctrlp.vim'
+Bundle 'jamessan/vim-gnupg'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'klen/python-mode'
-Bundle 'tristen/vim-sparkup'
 
 syntax on
 filetype plugin indent on
