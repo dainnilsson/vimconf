@@ -20,6 +20,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'jamessan/vim-gnupg'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'klen/python-mode'
+Bundle 'peterhoeg/vim-qml'
 
 syntax on
 filetype plugin indent on
@@ -38,6 +39,8 @@ au BufRead,BufNewFile *.template setfiletype html
 
 " Type specific indentation
 " autocmd FileType html setlocal shiftwidth=2 tabstop=2
+
+au FileType qml setl sw=4 sts=4
 
 " python-mode
 " Disable python folding
