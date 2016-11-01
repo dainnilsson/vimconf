@@ -41,10 +41,13 @@ au BufRead,BufNewFile *.template setfiletype html
 " autocmd FileType html setlocal shiftwidth=2 tabstop=2
 
 au FileType qml setl sw=4 sts=4
+au FileType cpp setl sw=4 sts=4
 
 " python-mode
 " Disable python folding
 let g:pymode_folding = 0
+" Disable rope autocomplete (freezes vim sometimes)
+let g:pymode_rope_lookup_project = 0
 
 " Works with files encrypted for multiple smart cards
 let g:GPGExecutable = "gpg2"
@@ -53,3 +56,7 @@ let g:GPGExecutable = "gpg2"
 set directory^=~/.cache/vim/swap//
 set undodir^=~/.cache/vim/undo//
 set backupdir^=~/.cache/vim/backup//
+
+
+set mouse=a
+set ttymouse=xterm2
