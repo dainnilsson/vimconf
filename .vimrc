@@ -21,6 +21,7 @@ Bundle 'jamessan/vim-gnupg'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'klen/python-mode'
 Bundle 'peterhoeg/vim-qml'
+Bundle 'fatih/vim-go'
 
 syntax on
 filetype plugin indent on
