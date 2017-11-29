@@ -44,6 +44,7 @@ au BufRead,BufNewFile *.template setfiletype html
 au FileType qml setl sw=4 sts=4
 au FileType cpp setl sw=4 sts=4
 
+au BufRead,BufNewFile *.wsgi setfiletype python
 " python-mode
 " Disable python folding
 let g:pymode_folding = 0
